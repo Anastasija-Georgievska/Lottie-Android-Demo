@@ -99,7 +99,7 @@ In `res/layout/activity_main.xml`, define the layout with a `LottieAnimationView
 
 * * * * *
 
-### Step 6: **Create the Main Activity**
+### Step 5: **Create the Main Activity**
 
 In `MainActivity.kt`, configure the `LottieAnimationView` to load an animation from a URL:
 
