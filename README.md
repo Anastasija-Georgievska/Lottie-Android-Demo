@@ -30,7 +30,7 @@ The primary goal of this project is to showcase:
     -   Limited support for complex animations (only certain After Effects features are supported).
     -   Requires additional effort to debug custom animations if improperly created.
 -   **License:**\
-    Lottie-Android is licensed under the **Apache 2.0 License**, making it suitable for commercial and open-source projects.
+    Lottie-Android is licensed under **MIIT**. This permissive license allows for extensive use, modification, and distribution of the software with minimal restrictions..
 
 -   **Popularity & Maintenance:**
 
@@ -62,7 +62,7 @@ The primary goal of this project is to showcase:
 Add the following dependencies in your `build.gradle` (Module: app) file:
 
 `dependencies {
-    implementation 'com.airbnb.android:lottie:5.2.0'
+    **implementation 'com.airbnb.android:lottie:5.2.0'**
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }`
 
