@@ -62,57 +62,18 @@ The primary goal of this project is to showcase:
 Add the following dependencies in your `build.gradle` (Module: app) file:
 
 `dependencies {
-    **implementation 'com.airbnb.android:lottie:5.2.0'**
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-}`
-
-Enable View Binding in the same file:
-
-`android {
-    ...
-    buildFeatures {
-        viewBinding = true
-    }
+    implementation 'com.airbnb.android:lottie:5.2.0'
 }`
 
 * * * * *
 
-### Step 3: **Define the Theme**
+### Step 3: **Update the Manifest**
 
-In `res/values/styles.xml`, use a theme compatible with Lottie:
-
-`<resources>
-    <style name="Theme.Lottie" parent="Theme.AppCompat.Light.NoActionBar" /> </resources> `
+Add the Internet permission in `AndroidManifest.xml`:
 
 * * * * *
 
-### Step 4: **Update the Manifest**
-
-Add the `MainActivity` and Internet permission in `AndroidManifest.xml`:
-
-```xml
-<uses-permission android:name="android.permission.INTERNET" />
-
-<application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
-    android:theme="@style/Theme.Lottie">
-    <activity
-        android:name=".MainActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
-```
-
-* * * * *
-
-### Step 5: **Create the Layout**
+### Step 4: **Create the Layout**
 
 In `res/layout/activity_main.xml`, define the layout with a `LottieAnimationView`:
 
