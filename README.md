@@ -104,10 +104,11 @@ V layout datoteki dodamo komponento LottieAnimationView, ki bo prikazovala anima
 
 ### Korak 5: **Ustvarjanje MainActivity**
 
-V datoteki MainActivity.kt napišemo kodo za nalaganje in predvajanje animacije:
+S spletne strani Lottie kopiramo URL za animacijo:
 
 ![image](https://github.com/user-attachments/assets/cb1f55e4-db98-4925-bf5f-fa0a5cc1f400)
 
+V datoteki MainActivity.kt napišemo kodo za nalaganje in predvajanje animacije:
 setAnimationFromUrl(): Nalaganje animacije iz URL-ja.
 playAnimation(): Začne predvajanje animacije.
 
