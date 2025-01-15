@@ -147,7 +147,7 @@ class MainActivity : AppCompatActivity() {
 
 * * * * *
 
-1.  **Zagon naloge:**
+1.  **Integracija v zadnje naloge pri PORA:**
 
    ![11](https://github.com/user-attachments/assets/627eb0a2-5782-4ed2-b2e3-d04b96caeb1f)
 
