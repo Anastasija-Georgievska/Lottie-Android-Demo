@@ -1,65 +1,65 @@
 Lottie-Android-Demo
 ===================
 
-This project demonstrates the use of the **Lottie-Android** library for integrating lightweight and scalable animations into Android applications. It covers the basics of setting up a Lottie animation from a URL, configuring themes, and displaying the animation using `LottieAnimationView`.
+Ta projekt prikazuje uporabo knjižnice **Lottie-Android** za integracijo lahkih in prilagodljivih animacij v Android aplikacije. Pojasnjuje osnove nastavitve Lottie animacij iz URL-ja, konfiguracije tem ter prikaza animacije z uporabo `LottieAnimationView`.
 
 * * * * *
 
-🎯 **Purpose of the Project**
------------------------------
+🎯 **Namen Projekta**
+---------------------
 
-The primary goal of this project is to showcase:
+Glavni cilji tega projekta so:
 
-1.  How to use **Lottie-Android** for rendering animations in an Android app.
-2.  The advantages of using JSON-based animations for better performance and scalability.
-3.  A step-by-step demonstration of integrating Lottie in an Android project.
-
-* * * * *
-
-📌 **Why Lottie?**
-------------------
-
--   **Advantages:**
-
-    -   Supports scalable vector animations in JSON format.
-    -   Provides cross-platform support (Android, iOS, Web, React Native).
-    -   Reduces app size compared to GIFs or videos.
-    -   Easy to use with pre-built animations from [LottieFiles](https://lottiefiles.com/).
--   **Disadvantages:**
-
-    -   Limited support for complex animations (only certain After Effects features are supported).
-    -   Requires additional effort to debug custom animations if improperly created.
--   **License:**\
-    Lottie-Android is licensed under **MIIT**. This permissive license allows for extensive use, modification, and distribution of the software with minimal restrictions..
-
--   **Popularity & Maintenance:**
-
-    -   35,000+ stars on GitHub.
-    -   Actively maintained with frequent updates.
-    -   Over 250 contributors and strong community support.
+1. Prikaz, kako uporabljati **Lottie-Android** za upodabljanje animacij v Android aplikaciji.
+2. Poudariti prednosti uporabe animacij v **JSON** formatu za boljšo zmogljivost in skalabilnost.
+3. Korak za korakom predstaviti, kako integrirati Lottie v Android projekt.
 
 * * * * *
 
-🚀 **Project Setup**
+📌 **Zakaj Lottie?**
 --------------------
 
-### Prerequisites
+- **Prednosti:**
+   - Podpora za skalabilne vektorske animacije v **JSON** formatu.
+   - Nudi podporo za več platform: **Android, iOS, Web, React Native**.
+   - Zmanjša velikost aplikacije v primerjavi z GIF ali video datotekami.
+   - Enostavna uporaba s pripravljenimi animacijami iz [LottieFiles](https://lottiefiles.com/).
 
-1.  **Android Studio** (Latest Version).
-2.  **Internet Connection** (to fetch Lottie animations from URLs).
+- **Slabosti:**
+   - Omejena podpora za kompleksne animacije (podpira le določene funkcije Adobe After Effects).
+   - Potreben dodaten trud za odpravljanje napak pri nepravilno ustvarjenih animacijah.
+
+- **Licenca:**  
+   Lottie-Android je licenciran pod **Apache 2.0 licenco**, kar omogoča široko uporabo, spreminjanje in distribucijo programske opreme z minimalnimi omejitvami.
+
+- **Priljubljenost in vzdrževanje:**
+   - Več kot **35.000 zvezdic** na GitHubu.
+   - Aktivno vzdrževan s pogostimi posodobitvami.
+   - Več kot **250 prispevkov** in močna skupnost razvijalcev.
 
 * * * * *
 
-### Step 1: **Clone the Repository**
+
+🚀 **Nastavitev Projekta**
+--------------------------
+
+### Predpogoji
+1. **Android Studio** (zadnja različica).  
+2. **Internetna povezava** (za nalaganje animacij iz URL-jev).
+
+
+* * * * *
+
+### Korak 1: **Kloniranje Repozitorija**
 
 
 `git clone https://github.com/your-username/Lottie-Android-Demo.git`
 
 * * * * *
 
-### Step 2: **Set Up Gradle**
+### Korak 2: **Nastavitev Gradle**
 
-Add the following dependencies in your `build.gradle` (Module: app) file:
+V datoteki build.gradle (Module: app) je treba dodati odvisnosti za uporabo Lottie:
 
 `dependencies {
     implementation 'com.airbnb.android:lottie:5.2.0'
@@ -67,15 +67,18 @@ Add the following dependencies in your `build.gradle` (Module: app) file:
 
 * * * * *
 
-### Step 3: **Update the Manifest**
+### Korak 3: **Posodobitev Manifesta**
 
-Add the Internet permission in `AndroidManifest.xml`:
+V datoteki AndroidManifest.xml moramo dodati dovoljenje za dostop do interneta, saj bomo animacije nalagali s spleta:
+
+`<uses-permission android:name="android.permission.INTERNET"/>`
 
 * * * * *
 
-### Step 4: **Create the Layout**
+### Korak 4: **Ustvarjanje Layout datoteke**
 
-In `res/layout/activity_main.xml`, define the layout with a `LottieAnimationView`:
+V layout datoteki dodamo komponento LottieAnimationView, ki bo prikazovala animacijo:
+(app:lottie_loop="true": Animacija se predvaja neprekinjeno v zanki)
 
 ```xml
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -99,12 +102,14 @@ In `res/layout/activity_main.xml`, define the layout with a `LottieAnimationView
 
 * * * * *
 
-### Step 5: **Create the Main Activity**
+### Korak 5: **Ustvarjanje MainActivity**
 
-In `MainActivity.kt`, configure the `LottieAnimationView` to load an animation from a URL:
+V datoteki MainActivity.kt napišemo kodo za nalaganje in predvajanje animacije:
 
 ![image](https://github.com/user-attachments/assets/cb1f55e4-db98-4925-bf5f-fa0a5cc1f400)
 
+setAnimationFromUrl(): Nalaganje animacije iz URL-ja.
+playAnimation(): Začne predvajanje animacije.
 
 ```kotlin
 package com.example.lottie
@@ -131,37 +136,37 @@ class MainActivity : AppCompatActivity() {
 
 * * * * *
 
-📷 **Screenshots**
+📷 **Posnetki zaslona**
 ------------------
 
-1.  **App Launch**\
-    The app launches with a centered Lottie animation:
+1.  **Zagon aplikacije:**\
+    Aplikacija se zažene s centralizirano Lottie animacijo:
     
     ![image](https://github.com/user-attachments/assets/be1f5275-516c-461d-98ac-be973325d9bb)
 
 * * * * *
 
-📖 **Key Features Demonstrated**
+📖 **Ključne Funkcije Projekta**
 --------------------------------
 
-1.  Loading animations from a URL.
-2.  Using `LottieAnimationView` to display animations.
-3.  Looping animations using `app:lottie_loop="true"`.
-4.  Theme integration with `AppCompat`.
+1.  Nalaganje animacij iz URL-ja.
+2.  Uporaba LottieAnimationView za prikaz animacij.
+3.  Zanka animacij z uporabo app:lottie_loop="true".
+4.  Integracija tem s AppCompat.
 
 * * * * *
 
-🛠 **Potential Use Cases**
+🛠 **Možne Uporabe**
 --------------------------
 
--   Splash screens with animations.
--   Interactive animations for buttons or icons.
--   Loading indicators with modern designs.
+-   Animirane Splash Screen uvodne strani.
+-   Interaktivne animacije za gumbe in ikone.
+-   Moderni indikatorji nalaganja.
 
 * * * * *
 
-⚙️ **Customization Options**
+⚙️ **Možnosti Prilagajanja**
 ----------------------------
 
--   Replace the animation URL with any [LottieFiles](https://lottiefiles.com/) JSON animation.
--   Modify the loop behavior by setting `app:lottie_loop="false"`.
+-   Zamenjajte URL animacije z LottieFiles povezavo za drugačno animacijo.
+-   Spremenite obnašanje zanke z app:lottie_loop="false".
