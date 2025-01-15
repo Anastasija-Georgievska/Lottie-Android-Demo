@@ -147,7 +147,7 @@ class MainActivity : AppCompatActivity() {
 
 * * * * *
 
-1.  **Zagon projekta:**\
+1.  **Zagon projekta:**
 
    ![11](https://github.com/user-attachments/assets/627eb0a2-5782-4ed2-b2e3-d04b96caeb1f)
 
