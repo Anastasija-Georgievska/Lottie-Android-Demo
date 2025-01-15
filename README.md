@@ -155,6 +155,12 @@ class MainActivity : AppCompatActivity() {
 
    ![13](https://github.com/user-attachments/assets/bf25bafa-fe84-4ca6-9f5e-b1caafb5d926)
 
+   
+
+https://github.com/user-attachments/assets/b69abc51-e6ca-457b-a568-d9a944f8636c
+
+
+
 
 📖 **Ključne Funkcije Projekta**
 --------------------------------
