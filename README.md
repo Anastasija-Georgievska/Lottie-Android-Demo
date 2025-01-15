@@ -147,6 +147,15 @@ class MainActivity : AppCompatActivity() {
 
 * * * * *
 
+1.  **Zagon projekta:**\
+
+   ![11](https://github.com/user-attachments/assets/627eb0a2-5782-4ed2-b2e3-d04b96caeb1f)
+
+   ![12](https://github.com/user-attachments/assets/02eb7cdb-0726-4590-a098-5570c687bfc4)
+
+   ![13](https://github.com/user-attachments/assets/bf25bafa-fe84-4ca6-9f5e-b1caafb5d926)
+
+
 📖 **Ključne Funkcije Projekta**
 --------------------------------
 
